@@ -1,5 +1,6 @@
 body {
-	background-color: black;
+	background-color: #e9f1c2;
+	display: flex;
 }
 div#board {
 	position: relative;

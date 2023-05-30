@@ -8,8 +8,12 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div id="messageArea"></div>
+	<form>
+		<input type="text" id="guessInput" placeholder="A0">
+		<input type="button" id="fireButton" value="Fire!">
+	</form>
 	<div id="board">
-		<div id="messageArea"></div>
 		<table>
 			<tr>
 				<td id="00"></td>
@@ -75,11 +79,9 @@
 				<td id="66"></td>
 			</tr>
 		</table>
-		<form>
-			<input type="text" id="guessInput" placeholder="A0">
-			<input type="button" id="fireButton" value="Fire!">
-		</form>
 	</div>
+	<div id="scores"></div>
+	<a href="faq.php">Spørsmål og svar</a>
 	<script src="script.js"></script>
 </body>
 
