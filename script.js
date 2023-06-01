@@ -17,7 +17,7 @@ var model = {
 
 			// Check to see if the ship has already been hit, message the user, and return true.
 			if (ship.hits[index] === "hit") {
-				view.displayMessage("Oops, you already hit that location!");
+				view.displayMessage("Oops, ye already 'it that there location!");
 				return true;
 			} else if (index >= 0) {
 				ship.hits[index] = "hit";
@@ -25,14 +25,14 @@ var model = {
 				view.displayMessage("HIT!");
 
 				if (this.isSunk(ship)) {
-					view.displayMessage("You sank my battleship!");
+					view.displayMessage("Ye sank me battleship!");
 					this.shipsSunk++;
 				}
 				return true;
 			}
 		}
 		view.displayMiss(guess);
-		view.displayMessage("You missed.");
+		view.displayMessage("HA! Ye missed.");
 		return false;
 	},
 
@@ -122,7 +122,7 @@ var controller = {
 			this.guesses++;
 			var hit = model.fire(location);
 			if (hit && model.shipsSunk === model.numShips) {
-				view.displayMessage("You sank all my battleships, in " + this.guesses + " guesses");
+				view.displayMessage("Ye sank all me battleships, in " + this.guesses + " guesses");
 			}
 		}
 	}
@@ -135,17 +135,17 @@ function parseGuess(guess) {
 	var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
 
 	if (guess === null || guess.length !== 2) {
-		alert("Oops, please enter a letter and a number on the board.");
+		alert("Ay, please enter a letter an' a number on the board.");
 	} else {
 		var firstChar = guess.charAt(0);
 		var row = alphabet.indexOf(firstChar);
 		var column = guess.charAt(1);
 
 		if (isNaN(row) || isNaN(column)) {
-			alert("Oops, that isn't on the board.");
+			alert("'ay bucko, that be off the board");
 		} else if (row < 0 || row >= model.boardSize ||
 			column < 0 || column >= model.boardSize) {
-			alert("Oops, that's off the board!");
+			alert("'ay bucko, that be off the board!");
 		} else {
 			return row + column;
 		}

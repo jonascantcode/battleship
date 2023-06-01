@@ -1,54 +1,80 @@
 body {
 	background-color: rgb(233, 241, 193);
-	display: flex;
 }
+
+#container {
+	display: flex;
+	flex-direction: row;
+}
+
 div#board {
 	position: relative;
-	flex-grow: 8;
 	width: 1024px;
 	height: 863px;
 	margin: auto;
 	background: url("board.jpg") no-repeat;
 }
 
+#containerPlayer {
+	flex-direction: column;
+	top: 100px;
+	width: 300px;
+	height: 700px;
+	background: url("radio.png") no-repeat;
+}
+
 div#messageArea {
-	position: absolute;
+	flex-direction: row;
 	top: 0px;
 	left: 0px;
 	color: transparent;
 }
 
 #scores {
-	flex-direction: column;
+	width: 200px;
 }
 
 .hit {
 	background: url("ship.png") no-repeat center center;
 }
+
 .miss {
 	background: url("miss.png") no-repeat center center;
 }
-table {
-	border-spacing: 0px; 
+
+table#boardgame {
+	border-spacing: 0px;
 	/* border-collapse: collapse; */
 	position: absolute;
 	left: 173px;
 	top: 98px;
 }
+
 td {
-	width: 94px;
-	height: 94px;
+	width: 93px;
+	height: 93px;
 }
+
+.scoreTable {
+	width: 0px;
+	height: 0px;
+}
+
+
 form {
-	position: top;
-	bottom: 0px;
-	right: 0px;
-	padding: 15px;
-	background: url("radio.png") no-repeat;
+	height: 200px;
+	margin-top: 233px;
+	margin-right: 10px;
+	padding: 20px;
 	background-color: transparent;
 }
+
 form input {
-	background-color: lightslategray;
-	border-color: lightsteelblue;
-	font-size: 13px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color: #f2f3f4;
+	font-size: 24px;
+}
+
+form button {
+	background-color: #f2f3f4;
 }
