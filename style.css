@@ -24,10 +24,8 @@ div#board {
 }
 
 div#messageArea {
-	flex-direction: row;
-	top: 0px;
-	left: 0px;
-	color: transparent;
+	padding: 200px;
+	font-size: 30px;
 }
 
 #scores {

@@ -12,11 +12,11 @@
 <body>
 	<div id="container">
 		<div id="containerPlayer">
-			<div id="messageArea"></div>
 			<form id="radio">
 				<input type="text" id="guessInput" placeholder="Coordinates go here..">
 				<input type="button" id="fireButton" value="Click to FIRE!">
 			</form>
+			<div id="messageArea"></div>
 		</div>
 		<div id="board">
 			<table id="boardgame">
