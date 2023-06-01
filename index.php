@@ -91,7 +91,7 @@
 			<?php
 			include('highScore.php');
 			?>
-			<a href="faq.php">Spørsmål og svar</a>
+			<a href="faq.php">Questions go through me :)</a>
 		</div>
 	</div>
 	<script src="script.js"></script>

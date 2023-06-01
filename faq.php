@@ -12,7 +12,7 @@
     <input type="submit" value="Submit">
 </form>
 
-<h1>Frequently Asked Questions</h1>
+<h1>Previously Asked Questions</h1>
 
 <?php
 include 'dbconn.php';
