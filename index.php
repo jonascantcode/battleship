@@ -14,7 +14,7 @@
 		<div id="containerPlayer">
 			<form id="radio">
 				<input type="text" id="guessInput" placeholder="Coordinates go here..">
-				<input type="button" id="fireButton" value="Click to FIRE!">
+				<input type="button" id="fireButton" value="FIRE!">
 			</form>
 			<div id="messageArea"></div>
 		</div>
