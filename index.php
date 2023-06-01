@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Battleship</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<div id="messageArea"></div>
-	<form>
-		<input type="text" id="guessInput" placeholder="A0">
-		<input type="button" id="fireButton" value="Fire!">
-	</form>
+	<div>
+		<div id="messageArea"></div>
+		<form id="radio">
+			<input type="text" id="guessInput" placeholder="A0">
+			<input type="button" id="fireButton" value="Fire!">
+		</form>
+	</div>
 	<div id="board">
 		<table>
 			<tr>
@@ -80,8 +84,14 @@
 			</tr>
 		</table>
 	</div>
-	<div id="scores"></div>
-	<a href="faq.php">Spørsmål og svar</a>
+	<div id="scores">
+		<h2>top ten, well done!</h2>
+		<?php
+		include('highScore.php');
+		?>
+		<a href="faq.php">Spørsmål og svar</a>
+	</div>
+
 	<script src="script.js"></script>
 </body>
 
