@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<div>
+	<div id="containerPlayer">
 		<div id="messageArea"></div>
 		<form id="radio">
 			<input type="text" id="guessInput" placeholder="A0">

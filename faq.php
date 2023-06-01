@@ -1,3 +1,5 @@
+<a href="index.php">Back to game</a>
+
 <h1>Frequently Asked Questions</h1>
 
 <!-- Question submission form -->
