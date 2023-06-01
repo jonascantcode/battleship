@@ -1,5 +1,5 @@
 body {
-	background-color: #e9f1c2;
+	background-color: rgb(233, 241, 193);
 	display: flex;
 }
 div#board {
@@ -38,6 +38,7 @@ form {
 	bottom: 0px;
 	right: 0px;
 	padding: 15px;
+	background: url("radio.png") no-repeat;
 	background-color: transparent;
 }
 form input {
