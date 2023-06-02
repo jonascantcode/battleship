@@ -91,7 +91,7 @@
 			<?php
 			include('highScore.php');
 			?>
-			<a href="faq.php">Questions go through me :)</a>
+			<a href="https://youtu.be/QE22J6wd1Bg" target="_blank" style="background-color: #6495ed; font-size: 50px; ">How to play :)</a>
 		</div>
 	</div>
 	<script src="script.js"></script>
