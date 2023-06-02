@@ -18,5 +18,6 @@ CREATE TABLE IF NOT EXISTS `battleship`.`faq` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(56) NOT NULL,
   `question` VARCHAR(255) NOT NULL,
+  `answer` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
