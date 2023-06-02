@@ -84,6 +84,7 @@
 					<td id="66"></td>
 				</tr>
 			</table>
+			<p>i own everything you see on this website, 'tis my intellectual property. you can use it as long as you credit me. - Jonas N.G. Mathe</p>
 		</div>
 		<div id="scores">
 			<a href="tut.html" style="background-color: #6495ed; font-size: 50px; ">How to play :)</a>
@@ -94,6 +95,7 @@
 			<a href="https://youtu.be/QE22J6wd1Bg" target="_blank" style="background-color: #6495ed; font-size: 50px; ">How to play :)</a>
 		</div>
 	</div>
+	
 	<script src="script.js"></script>
 </body>
 
