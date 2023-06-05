@@ -14,6 +14,13 @@
 
     <h1>Frequently Asked Questions</h1>
 
+
+    <p>Q: I can't see my highscores. What do I do??<br> A: Check if you have set up the database correctly. I have a tutorial on my GitHub in the "dokumentasjon" folder</p>
+    <p>Q: How do I play the game?<br> A: On the homepage in the top right corner is a link to a video tutorial. The video explains everything you need to know.</p>
+    <p>Q: I want to use your source code, is that okay?<br> A: Feel free to use anything on my GitHub as long as you provide credit where it is due. :)</p>
+    <p>Q: The game is too big for my screen, how do i fix this?<br> A: Unfortunately this game is not suited for mobile device such as smartphones. However if you are using a laptop simply scale down the website and everything should fall into place.</p>
+
+
     <!-- Question submission form -->
     <h2>Submit a Question</h2>
     <form method="post">
@@ -24,7 +31,7 @@
         <input type="submit" value="Submit">
     </form>
 
-    <h1>Frequently Asked Questions</h1>
+    <h1>Recently Asked Questions</h1>
 
     <?php
     include 'dbconn.php';
