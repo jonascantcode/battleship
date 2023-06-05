@@ -59,7 +59,7 @@ td {
 }
 
 
-form {
+form#radio {
 	height: 200px;
 	margin-top: 233px;
 	margin-right: 10px;
@@ -67,12 +67,12 @@ form {
 	background-color: transparent;
 }
 
-form input {
+form#radio input {
 	background-color: rgba(255, 255, 255, 0.5);
 	border-color: #f2f3f4;
 	font-size: 24px;
 }
 
-form button {
+form#radio button {
 	background-color: #f2f3f4;
 }
