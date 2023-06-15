@@ -45,7 +45,7 @@
         if ($connect->query($sql) === TRUE) {
             echo "Question submitted successfully.";
         } else {
-            echo "Error submitting question: " . $connect->error;
+            echo "Error submitting question: " . $connect->connect_error;
         }
     }
 

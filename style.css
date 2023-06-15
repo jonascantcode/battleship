@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(233, 241, 193);
+	font-family: sans-serif;
 }
 
 #container {
@@ -24,9 +25,10 @@ div#board {
 }
 
 div#messageArea {
-	padding: 200px;
+	padding-top: 123px;
 	font-size: 30px;
-}
+	padding-left: 50px;
+  }
 
 #scores {
 	width: 200px;
@@ -50,7 +52,7 @@ table#boardgame {
 
 td {
 	width: 93px;
-	height: 93px;
+	height: 94px;
 }
 
 .scoreTable {
@@ -75,4 +77,10 @@ form#radio input {
 
 form#radio button {
 	background-color: #f2f3f4;
+}
+
+#refreshContainer {
+	color: red;
+	border-color: #f2f3f4;
+	font-size: 24px;
 }

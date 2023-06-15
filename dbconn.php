@@ -2,8 +2,8 @@
 // Establish connection to database
     #Define connection parameters
     $host = "localhost";
-    $usernm = "root";
-    $userpass = "";
+    $usernm = "user";
+    $userpass = "gg5n0r3";
     $database = "battleship";
 
     #Establish connection with database

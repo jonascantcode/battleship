@@ -122,9 +122,42 @@ var controller = {
 			this.guesses++;
 			var hit = model.fire(location);
 			if (hit && model.shipsSunk === model.numShips) {
-				view.displayMessage("Ye sank all me battleships, in " + this.guesses + " guesses");
+				var name = prompt("Good enough! Enter yer three-character name:");
+				if (name && name.length === 3) {
+					view.displayMessage("Ye sank all me battleships, in " + this.guesses + " guesses");
+					this.saveGame(name.toUpperCase(), this.guesses); // Call saveGame method with the name and the score
+					this.showRefreshButton();
+				} else {
+					alert("Invalid name! The name should be three characters long.");
+				}
 			}
 		}
+	},
+
+	saveGame: function (name, guesses) {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open('POST', 'save_game.php');
+		xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhttp.onreadystatechange = function () {
+			if (xhttp.readyState === 4 && xhttp.status === 200) {
+				console.log(xhttp.responseText);
+			}
+		};
+
+		var data = 'name=' + encodeURIComponent(name) + '&guesses=' + encodeURIComponent(guesses);
+		xhttp.send(data);
+	},
+
+	showRefreshButton: function () {
+		var refreshButton = document.createElement('button');
+		refreshButton.textContent = 'Click me to refresh and see your score!';
+		refreshButton.addEventListener('click', function () {
+			location.reload(); // Refresh the page
+		});
+
+		// Append the refresh button to a container element in your HTML
+		var container = document.getElementById('refreshContainer');
+		container.appendChild(refreshButton);
 	}
 }
 

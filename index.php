@@ -14,7 +14,7 @@
 		<div id="containerPlayer">
 			<form id="radio">
 				<input type="text" id="guessInput" placeholder="Coordinates go here..">
-				<input type="button" id="fireButton" value="FIRE!">
+				<input type="button" id="fireButton" value="Click to FIRE!">
 			</form>
 			<div id="messageArea"></div>
 		</div>
@@ -84,18 +84,19 @@
 					<td id="66"></td>
 				</tr>
 			</table>
-			<p>i own everything you see on this website, 'tis my intellectual property. you can use it as long as you credit me. - Jonas N.G. Mathe</p>
+			<p>i own everythin' ye see on this here website, 'tis me intellectual property. ye can use it as long as ye credit me. - Jonas N.G. Mathe</p>
+			<p>to win ye must sink three fleets o' nine ships. call in the coordinates where ye wish to fire</p>
 		</div>
 		<div id="scores">
-			<a href="tut.html" style="background-color: #6495ed; font-size: 50px; ">How to play :)</a>
+			<a href="https://youtu.be/QE22J6wd1Bg" target="_blank" style="background-color: #6495ed; font-size: 50px; ">How to play :)</a>
 			<h2>top ten, well done!</h2>
 			<?php
 			include('highScore.php');
 			?>
-			<a href="https://youtu.be/QE22J6wd1Bg" target="_blank" style="background-color: #6495ed; font-size: 50px; ">How to play :)</a>
+			<a href="faq.php">Spørsmål og svar</a>
+			<div id="refreshContainer"></div>
 		</div>
 	</div>
-	
 	<script src="script.js"></script>
 </body>
 
